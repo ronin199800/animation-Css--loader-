@@ -1,0 +1,26 @@
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(      
+        to bottom right,
+        #333333 , #121212);
+
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    border: 20px solid rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    border-top-color:#fff ;
+    border-radius: 50%;
+    animation: load 1.2s linear infinite ;
+}
+@keyframes load {
+    0%{
+        transform: translate(-50px , -50px) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50px , -50px) rotate(360deg);
+    }
+}
